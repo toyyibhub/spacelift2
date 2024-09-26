@@ -42,4 +42,13 @@ resource "aws_s3_bucket" "thoosesss" {
   }
 }
 
+resource "aws_s3_bucket" "thoosseesss" {
+  bucket = "toyyib-spacelift-0068"
+
+  tags = {
+    Name        = "toyyib-spacelift-0068"
+    Environment = var.environment
+  }
+}
+
 
