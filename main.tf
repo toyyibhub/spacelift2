@@ -48,6 +48,7 @@ resource "aws_s3_bucket" "thoosseesss" {
   tags = {
     Name        = "toyyib-spacelift-0068"
     Environment = var.environment
+    Use         = "test"
   }
 }
 
