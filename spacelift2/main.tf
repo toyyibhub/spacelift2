@@ -6,7 +6,7 @@ provider "aws" {
 
 # Define S3 backend for Terraform state
 terraform {
-  required_version = "<= 1.5.7"
+  required_version = "<= 1.4.0"
   backend "s3" {
     bucket         = "toyyib-spacelift-009"
     key            = "terraform.tfstate"
@@ -52,4 +52,13 @@ resource "aws_s3_bucket" "thoosseesss" {
   }
 }
 
+resource "aws_s3_bucket" "thhoosseesss" {
+  bucket = "toyyib-spacelift-0064"
+
+  tags = {
+    Name        = "toyyib-spacelift-0064"
+    Environment = var.environment
+    Use         = "test"
+  }
+}
 

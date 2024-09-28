@@ -1,9 +1,0 @@
-version: "2"
-
-stack_defaults:
-    terraform_version: "1.7.0"  # Specify your desired Terraform version here
-
-stacks:
-  spacelift2:
-    project_root: spacelift2
-
